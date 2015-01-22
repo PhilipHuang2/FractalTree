@@ -44,6 +44,12 @@ public void drawBranches(int x,int y, double branchLength, double angle)
     //Actual Drawing
     line(x,y,endX1,endY1);
     line(x,y,endX2,endY2);
+
+    if(branchLength >= smallestBranch)
+    {
+    	drawBranches(endX1,endY1,branchLength,angle1);
+     	drawBranches(endX2,endY2,branchLength,angle2);
+    }
 } 
   static public void main(String[] passedArgs) {
     String[] appletArgs = new String[] { "FractalTree" };
