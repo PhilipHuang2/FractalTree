@@ -1,11 +1,9 @@
-import javax.swing.*;
 public double fractionLength = .8; 
 public int smallestBranch = 10; 
 public double branchAngle = .2;  
 public void setup() 
-{   
+{ 
 	size(640,480);    
-	
 	noLoop(); 
 } 
 public void draw() 
@@ -38,21 +36,3 @@ public void drawBranches(int x,int y, double branchLength, double angle)
     }
 } 
 
-/*
-public class SecondApplet extends PApplet 
-{
-  public void setup() 
-  {
-    background(0);
-    noStroke();
-  }
-
-  public void draw()
-  {
-    background(50);
-    text(fractionLength, 0, 0);
- 	text(smallestBranch, 0, 30);
- 	text(branchAngle, 0, 60,);
-  }
-}
-*/

@@ -18,7 +18,7 @@ public double fractionLength = .8f;
 public int smallestBranch = 10; 
 public double branchAngle = .2f;  
 public void setup() 
-{   
+{ 
 	size(640,480);    
 	noLoop(); 
 } 
@@ -51,6 +51,7 @@ public void drawBranches(int x,int y, double branchLength, double angle)
      	drawBranches(endX2,endY2,branchLength,angle2);
     }
 } 
+
   static public void main(String[] passedArgs) {
     String[] appletArgs = new String[] { "FractalTree" };
     if (passedArgs != null) {
