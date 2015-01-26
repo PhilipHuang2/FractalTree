@@ -12,6 +12,11 @@ public void draw()
 	stroke(0,255,0);   
 	line(320,480,320,380);   
 	drawBranches(320,380,100,3*Math.PI/2);  //will add later 
+	text("fractionLength", 20, 42);
+	text((float)(fractionLength),105, 42);
+	fill(255,255,255);
+	triangle(110, 30, 135, 30, 122, 5);
+	//triangle(x1, y1, x2, y2, x3, y3);
 } 
 public void drawBranches(int x,int y, double branchLength, double angle) 
 {   
