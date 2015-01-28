@@ -27,12 +27,26 @@ public void draw()
 	background(0);   
 	stroke(0,255,0);   
 	line(320,480,320,380);   
-	drawBranches(320,380,100,3*Math.PI/2);  //will add later 
+	drawBranches(320,380,100,3*Math.PI/2);  //will add later
+	textSize(12);
+	stroke(255,0,0);
+	fill(255,0,0);
 	text("fractionLength", 20, 42);
-	text((float)(fractionLength),105, 42);
+	text("smallestBranch", 250,42);
+	text("branchAngle",480,42);
+	textSize(10);
 	fill(255,255,255);
+	text((float)(fractionLength),105, 42);
+	text((float)(smallestBranch),335, 42);
+	text((float)(branchAngle),565, 42);
+	noStroke();
+	fill(23,248,255);
 	triangle(110, 30, 135, 30, 122, 5);
-	//triangle(x1, y1, x2, y2, x3, y3);
+	triangle(110, 45, 135, 45, 122, 70);
+	triangle(340, 30, 365, 30, 352, 5);
+	triangle(340, 45, 365, 45, 352, 70);
+	triangle(570, 30, 595, 30, 582, 5);
+	triangle(570, 45, 595, 45, 582, 70);
 } 
 public void drawBranches(int x,int y, double branchLength, double angle) 
 {   
