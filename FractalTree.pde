@@ -1,4 +1,4 @@
-public double fractionLength = .8; 
+public double fractionLength = .4; 
 public int smallestBranch = 10; 
 public double branchAngle = .2;  
 public void setup() 
@@ -31,7 +31,34 @@ public void draw()
 	triangle(340, 45, 365, 45, 352, 70);
 	triangle(570, 30, 595, 30, 582, 5);
 	triangle(570, 45, 595, 45, 582, 70);
+        fill(102,0,19);
+        text("7",119,25);
+        text("1",119,58);
+        text("8",349,25);
+        text("2",349,58);
+        text("9",579,25);
+        text("1",579,58);
 } 
+
+public void keyPressed()
+{
+  
+  if(key == '7' && fractionLength <.8)
+    fractionLength += .05;
+  if(key == '1' && fractionLength > 0)
+    fractionLength -= .05;
+  if(key == '8' && smallestBranch  < 81)
+    smallestBranch +=1;
+  if(key == '2' && smallestBranch > 4)
+    smallestBranch -=1;
+  if(key == '9' )
+    branchAngle +=0.1;
+  if(key == '3')
+    branchAngle +=-0.1; 
+    redraw();
+}
+
+
 public void drawBranches(int x,int y, double branchLength, double angle) 
 {   
 	double angle1, angle2;
