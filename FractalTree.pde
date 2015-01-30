@@ -37,7 +37,7 @@ public void draw()
         text("8",349,25);
         text("2",349,58);
         text("9",579,25);
-        text("1",579,58);
+        text("3",579,58);
 } 
 
 public void keyPressed()
@@ -64,8 +64,8 @@ public void drawBranches(int x,int y, double branchLength, double angle)
 	double angle1, angle2;
 	int endX1, endY1, endX2, endY2;
 	// math Stuff
- 	angle1 = angle + branchLength;
-	angle2 = angle - branchLength;
+ 	angle1 = angle + branchAngle;
+	angle2 = angle - branchAngle;
     branchLength = fractionLength* branchLength;
  	endX1 = (int)(branchLength*Math.cos(angle1) + x);
  	endY1 = (int)(branchLength*Math.sin(angle1) + y);
